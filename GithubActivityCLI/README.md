@@ -1,5 +1,9 @@
 # Github Activity CLI
 
+```Bash
+https://roadmap.sh/projects/github-user-activity
+```
+
 Một công cụ dòng lệnh (CLI) viết bằng Go giúp lấy và hiển thị lịch sử hoạt động (PushEvent) gần nhất của một người dùng GitHub.
 
 ## Yêu cầu hệ thống (Prerequisites)
