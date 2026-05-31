@@ -74,7 +74,7 @@ github-trending --duration monthly --limit 5`,
 			Language    string
 			Stars       string
 			Forks       string
-			StarsGrown  string
+			StarsGrowth string
 		}
 		// Bóc tách dữ liệu theo CSS Selector dựa trên block HTML bạn đưa
 		doc.Find("article.Box-row").Each(func(i int, s *goquery.Selection) {
@@ -123,7 +123,7 @@ github-trending --duration monthly --limit 5`,
 				Language:    lang,
 				Stars:       stars,
 				Forks:       forks,
-				StarsGrown:  starsText,
+				StarsGrowth: starsText,
 			}
 
 			count++
@@ -133,7 +133,7 @@ github-trending --duration monthly --limit 5`,
 			fmt.Printf("    URL:         %s\n", repo.URL)
 			fmt.Printf("    Description: %s\n", repo.Description)
 			fmt.Printf("    Total Stars: %s | Forks: %s\n", repo.Stars, repo.Forks)
-			fmt.Printf("    Growth:      %s\n", repo.StarsGrown)
+			fmt.Printf("    Growth:      %s\n", repo.StarsGrowth)
 			fmt.Println(strings.Repeat("-", 60))
 		})
 	},
