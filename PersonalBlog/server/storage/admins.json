@@ -1,8 +1,8 @@
 [
     {
-        "id": 0,
-        "username": "admin",
-        "password_hashed": "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918",
-        "created_at": "placeholder"
+      "id": "admin",
+      "username": "admin",
+      "password_hashed": "$2a$12$PWZfmz08ne9LtGWh1ZOSduoQe.JJPxxEcJtCVvUEoGuAv/e60mD5S",
+      "created_at": "2026-05-30T06:35:00.000Z"
     }
 ]

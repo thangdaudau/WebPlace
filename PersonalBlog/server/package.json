@@ -1,21 +1,24 @@
 {
-  "name": "server",
-  "version": "1.0.0",
-  "description": "",
-  "license": "ISC",
-  "author": "peapea",
-  "type": "commonjs",
-  "main": "server.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server",
-    "dev": "nodemon server"
-  },
-  "dependencies": {
-    "express": "^5.2.1",
-    "express-session": "^1.19.0"
+    "dev": "cross-env NODE_ENV=development nodemon -L --watch src --ext ts --exec tsx src/index.ts",
+    "build": "tsc",
+    "start": "cross-env NODE_ENV=production node dist/index.js"
   },
   "devDependencies": {
-    "nodemon": "^3.1.14"
+    "@types/bcrypt": "^6.0.0",
+    "@types/express": "^5.0.6",
+    "@types/express-session": "^1.19.0",
+    "@types/node": "^25.9.1",
+    "cross-env": "^10.1.0",
+    "nodemon": "^3.1.14",
+    "tsx": "^4.22.3",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0"
   }
 }
