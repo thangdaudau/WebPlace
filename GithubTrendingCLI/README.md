@@ -1,4 +1,4 @@
-# Github Activity CLI
+# Github Trending CLI
 
 Ứng dụng CLI hỗ trợ theo dõi các dự án (repositories) đang hot trên GitHub theo thời gian thực.
 
